@@ -30,6 +30,10 @@ body textarea:required:valid
 
 html, body
 	height: 100%
+.clearfix
+	content: ""
+	display: block
+	clear: both
 
 body
 	font-size: 16px
@@ -74,6 +78,7 @@ header
 .horizont
 	height: 435px
 	padding: 70px 0px
+	margin-bottom: 55px
 .horizont__block
 	text-align: center
 	color: $main-color
@@ -130,4 +135,50 @@ header
 		box-shadow: 0 0 70px $main-color, 0 0 150px $main-color inset
 	&:focus
 		text-decoration: none
+.DavidHope
+	height: 530px
+	background: url(../img/Hue_Saturation.png) no-repeat center
+	background-size: cover
+.DavidHope__content
+	padding-top: 150px
+	text-align: center
+	color: #fff
+.DavidHope__title
+	font-size: em(25px)
+	margin-bottom: 6px
+	position: relative
+	font-family: "ralewaysemibold", sans-serif
+	&::after
+		content: ""
+		width: 20px
+		height: 2px
+		background: #fff
+		position: absolute
+		right: 15%
+		top: 51%
+	&::before
+		content: ""
+		width: 20px
+		height: 2px
+		background: #fff
+		position: absolute
+		left: 15%
+		top: 51%
+.DavidHope__desc
+	font-size: em(14px)
+	margin: 0px 0px 48px
+	font-family: "ralewaysemibold", sans-serif
+	opacity: .2
+.DavidHope__text
+	font-size: em(14px)
+	line-height: em(26px)
+	margin-bottom: 62px
+	font-family: "ralewaylight", sans-serif
+.horizont__title-fix
+	&::after
+		right: 32%
+		top: 17%
+	&::before
+		left: 32%
+		top: 17%
 @import "media" // Всегда в конце

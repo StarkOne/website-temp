@@ -11,7 +11,7 @@
 			right: 2%
 		&::before
 			left: 2%
-
+	
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
@@ -20,7 +20,13 @@
 			display: none
 		&::before
 			display: none
-
+	.DavidHope__content
+		color: #fff
+	.DavidHope__title
+		&::after
+			display: none
+		&::before
+			display: none
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	/**/
@@ -28,10 +34,13 @@
 		margin-left: 20px
 	.arrow-wrap
 		margin-top: 190px
+	.DavidHope
+		background-position: 0px
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	/**/
-
+	.DavidHope
+		margin-top: 150px
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
