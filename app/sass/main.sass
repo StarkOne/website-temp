@@ -30,7 +30,7 @@ body textarea:required:valid
 
 html, body
 	height: 100%
-.clearfix
+.clearfix:after
 	content: ""
 	display: block
 	clear: both
@@ -181,4 +181,49 @@ header
 	&::before
 		left: 32%
 		top: 17%
+.cards
+	width: 100%
+	height: 1060px
+.card__forest
+	width: 42.8%
+	background: url(../img/card1.png) no-repeat 
+	background-size: cover
+	height: 500px
+	position: relative
+	cursor: pointer
+	float: left
+	&:hover
+		.card__content
+			opacity: 1
+.card__content
+	position: absolute
+	top: 20px
+	left: 20px
+	right: 20px
+	bottom: 20px
+	border: 2px solid #5f5c77
+	transition: all .5s
+	opacity: 0
+.card__bonfire
+	width: 57.2%
+	background: url(../img/card2.jpg) no-repeat 
+	background-size: cover
+	height: 800px
+	float: right
+.card__mountains
+	width: 42.8%
+	background: url(../img/card3.jpg) no-repeat 
+	background-size: cover
+	height: 560px
+	float: left
+.card__lake
+	width: 27.8%
+	background: url(../img/card4.jpg) no-repeat 
+	background-size: cover
+	height: 260px
+	float: left
+.card__content
+	text-align: center
+	padding: 150px 100px
+	color: #fff
 @import "media" // Всегда в конце
