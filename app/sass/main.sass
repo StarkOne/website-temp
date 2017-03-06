@@ -183,7 +183,6 @@ header
 		top: 17%
 .cards
 	width: 100%
-	height: 1060px
 .card__forest
 	width: 42.8%
 	background: url(../img/card1.png) no-repeat 
@@ -195,6 +194,20 @@ header
 	&:hover
 		.card__content
 			opacity: 1
+		&::after
+			opacity: 1
+	&::after
+		width: 15px
+		height: 15px
+		border-right: 3px solid #fff;
+		border-bottom: 3px solid #fff;
+		transform: rotate(-45deg)
+		bottom: 40px
+		transition: all .5s
+		right: 40px
+		opacity: 0
+		content: ""
+		position: absolute
 .card__content
 	position: absolute
 	top: 20px
@@ -214,16 +227,33 @@ header
 	width: 42.8%
 	background: url(../img/card3.jpg) no-repeat 
 	background-size: cover
-	height: 560px
+	height: 592px
 	float: left
 .card__lake
 	width: 27.8%
 	background: url(../img/card4.jpg) no-repeat 
 	background-size: cover
-	height: 260px
+	height: 292px
 	float: left
 .card__content
 	text-align: center
-	padding: 150px 100px
+	padding: 150px 140px
 	color: #fff
+.card__text
+	text-align: center
+	width: 27.8%
+	padding: 0 50px
+	float: left
+.card__text-bottom
+	padding-top: 30px
+	color: #3e3362
+	font-size: em(24px)
+	font-family: "ralewaysemibold", sans-serif
+.card__text-desc
+	font-size: em(14px)
+	line-height: em(26px)
+	font-family: "ralewaylight", sans-serif
+	margin-bottom: 30px
+.card__text-btn
+	margin-bottom: 30px
 @import "media" // Всегда в конце

@@ -11,7 +11,12 @@
 			right: 2%
 		&::before
 			left: 2%
-	
+	.card__lake
+		height: 340px
+	.card__mountains
+		height: 640px
+	.card__content
+		padding: 140px 50px
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
@@ -27,6 +32,11 @@
 			display: none
 		&::before
 			display: none
+	.card__lake
+		background-position: 0px -40px
+		width: 57.2%
+	.card__text
+		width: 100%
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	/**/
@@ -36,22 +46,40 @@
 		margin-top: 190px
 	.DavidHope
 		background-position: 0px
+	.card__lake
+		background-position: center
+	.card__forest
+		width: 100%
+	.card__bonfire
+		width: 100%
+		height: 500px
+		background-position: -40px 0px
+	.card__mountains
+		width: 100%
+		height: 400px
+		background-position: 0px -30px
+	.card__lake
+		width: 100%
+		height: 400px
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	/**/
 	.DavidHope
 		margin-top: 150px
 	.card__forest
-		width: 100%		
+		width: 100% 
 	.card__bonfire
 		width: 100%
 		background-position: -140px 0px
 	.card__mountains
 		width: 100%
-		height: 300px
+		background-position: center
+		height: 400px
 	.card__lake
 		width: 100%
 		height: 300px
+	.card__content
+		padding: 70px 50px
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
