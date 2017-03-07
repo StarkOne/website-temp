@@ -256,4 +256,46 @@ header
 	margin-bottom: 30px
 .card__text-btn
 	margin-bottom: 30px
+.photo__title
+	font-size: em(27px)
+	margin: 0
+	padding-bottom: 90px
+.questions
+	background: url(../img/footer.png) no-repeat center
+	background-size: cover
+	height: 392px
+	position: relative
+	padding: 90px 0px
+	&::before
+		content: ""
+		position: absolute
+		width: 85px
+		height: 85px
+		background: #fff
+		top: -11%
+		left: 50%
+		transform: translate(-50%, 0) rotate(45deg)
+	&::after
+		content: ""
+		position: absolute
+		display: inline-block
+		width: 22px
+		height: 30px
+		background: url(../img/Rectangl.png) no-repeat
+		left: 50%
+		top: 0
+		transform: translate(-50%, 0)
+	.horizont__block
+		color: #fff
+.questions__desc
+	font-size: em(14px)
+	line-height: em(26px)
+	margin-bottom: 62px
+	font-family: "ralewaylight", sans-serif
+.questions__btn
+	color: #fff
+	border-color: #fff
+	&:hover
+		color: #fff
+		box-shadow: 0 0 70px #ccc, 0 0 150px #ccc inset
 @import "media" // Всегда в конце
